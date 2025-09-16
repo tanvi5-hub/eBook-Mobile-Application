@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/storyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Story Title"
+        app:boxStrokeColor="@color/purple_500"
+        app:hintTextColor="@color/purple_500"/>
+
+    <EditText
+        android:id="@+id/storyDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Story Description"
+        app:boxStrokeColor="@color/purple_500"
+        app:hintTextColor="@color/purple_500"/>
+
+    <Spinner
+        android:id="@+id/storyCategoryDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Story Category"
+        app:boxStrokeColor="@color/purple_500"
+        app:hintTextColor="@color/purple_500"/>
+
+    <ImageView
+        android:id="@+id/coverImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/selectCoverButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Cover Image"
+        android:textColor="@color/white"
+        android:background="@color/purple"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/createStoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Story"
+        android:textColor="@color/white"
+        android:background="@color/purple"
+        android:layout_marginTop="16dp" />
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/composeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

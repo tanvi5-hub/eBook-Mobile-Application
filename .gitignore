@@ -1,0 +1,60 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Build outputs
+build/
+app/build/
+out/
+target/
+.gradle/
+.gradle/
+
+# Gradle wrapper logs
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Local config
+local.properties
+*.keystore
+*.jks
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Node/npm (if React frontend exists in app/)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+package-lock.json
+yarn.lock
+
+# Cache
+.cache/
+.parcel-cache/
+dist/
+coverage/
+
+# Large files not needed in repo
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.pdf
+*.docx
+*.xlsx
+
+# Firebase/Google services
+google-services.json
+serviceAccountKey.json
+

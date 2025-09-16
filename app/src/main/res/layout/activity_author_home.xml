@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AuthorHomeActivity">
+
+    <!-- TextView for "My Stories" -->
+    <TextView
+        android:id="@+id/myStoriesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Stories"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@color/purple_500"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"/>
+
+    <!-- ScrollView to hold the stories layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/stories_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Dynamically created story views will go here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FloatingActionButton for creating a new story -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createStoryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:clickable="true"
+        app:backgroundTint="#1764A1"
+        android:layout_margin="16dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple_500"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/nav_stats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stats"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="?attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+</LinearLayout>
